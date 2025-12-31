@@ -32,5 +32,3 @@ The **Training Extra** project contains system prompts designed to extend the AI
    * **Compression:** Strongest currently.
 
 > **Note:** Versions without SC or TM are just base/reference versions.
-
-Do you want me to do that too?
