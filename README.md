@@ -1,48 +1,34 @@
-# EasyAI
+# Training Extra (SPs)
 
-**EasyAI** is a lightweight AI launcher for fast and easy setup. It includes optional **Training Extra SPs**, which enhance any AI model with structured data, rules, and reference information. These SPs help the AI respond accurately, follow rules, and reduce hallucinations—**they work with any AI launcher and any AI model**.
+## Purpose
 
----
-
-## Features
-
-* **Easy setup** – run `EasyAI_Launcher.bat`.
-* **Model selection** – choose any model in `EasyAI/Models/...`.
-* **Training Extra SPs** – optional prompts that improve factual accuracy and consistency for any AI model.
-* **Universal compatibility** – works with any AI model.
-* **Lightweight and fast** – minimal dependencies, runs on standard Windows PCs.
+The **Training Extra** project contains system prompts designed to extend the AI’s knowledge and rules with structured data, metadata, and reference information. These SPs help the AI respond accurately, follow rules, and reduce hallucinations.
 
 ---
 
-## Training Extra SPs
+## Versioning
 
-Structured facts and rules to enhance AI responses. Designed to work with **any AI model or launcher**, not limited to EasyAI.
+### Base Versions
 
-### Versioning
+* Examples: **V1, V2, etc.**
+* Contain the **full, uncompressed content**.
+* Serve as reference versions.
 
-* **Base Versions** – Full, uncompressed content (V1, V2, etc.). Reference only.
-* **SC (Short Code)** – Frequently used terms replaced with short codes. Moderate compression.
+### Optimized Versions
 
-  * Example: `Intel Core i9-13900 → INT i9-13900`
-* **TM (Token Mapping)** – Terms and structures mapped to tokens for maximum compression.
+1. **SC (Short Code)**
 
-  * Example: `AMD Ryzen 7 5800X3D → R7-5800X3D`
+   * Frequently used terms are replaced with **short codes**.
+   * Reduces size moderately.
+   * Retains full information.
+   * Example: `Intel Core i9-13900 → INT i9-13900`
+   * **Compression:** Moderate.
 
-> Versions without SC or TM are base/reference only.
+2. **TM (Token Mapping)**
 
----
+   * Terms, structures, and entities are **mapped to tokens**.
+   * Achieves **maximum compression** while keeping all explicit data intact.
+   * Example: `AMD Ryzen 7 5800X3D → R7-5800X3D`
+   * **Compression:** Strongest currently.
 
-## Usage
-
-1. Place your AI model in `EasyAI/Models/...`.
-2. Run `EasyAI_Launcher.bat`.
-3. Select a model.
-4. Use **Training Extra SPs** if desired (works with any model).
-5. Start chatting.
-
----
-
-## Notes
-
-* **Training Extra SPs** are compatible with any AI launcher or model.
-* Designed for **Windows 10+**, but the SPs can be integrated into other platforms if supported.
+> **Note:** Versions without SC or TM are just base/reference versions.
