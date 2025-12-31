@@ -1,34 +1,40 @@
-# Training Extra (SPs)
+# EasyAI
 
-## Purpose
-
-The **Training Extra** project contains system prompts designed to extend the AI’s knowledge and rules with structured data, metadata, and reference information. These SPs help the AI respond accurately, follow rules, and reduce hallucinations.
+**EasyAI** is a lightweight AI launcher for fast and easy setup. It includes optional **Training Extra SPs**, which extend the AI’s knowledge with structured data and reference information, helping it respond accurately, follow rules, and reduce hallucinations.
 
 ---
 
-## Versioning
+## Features
 
-### Base Versions
+* **Easy setup** – run `Launch.bat`.
+* **Model selection** – pick any model in `EasyAI/Models/...`.
+* **Training Extra SPs** – optional prompts to improve accuracy and factual consistency.
+* **Lightweight and fast** – minimal dependencies, works on standard Windows PCs.
 
-* Examples: **V1, V2, etc.**
-* Contain the **full, uncompressed content**.
-* Serve as reference versions.
+---
 
-### Optimized Versions
+## Training Extra SPs
 
-1. **SC (Short Code)**
+Structured facts and rules to enhance AI responses.
 
-   * Frequently used terms are replaced with **short codes**.
-   * Reduces size moderately.
-   * Retains full information.
-   * Example: `Intel Core i9-13900 → INT i9-13900`
-   * **Compression:** Moderate.
+### Versioning
 
-2. **TM (Token Mapping)**
+* **Base Versions** – Full, uncompressed content (V1, V2, etc.). Reference only.
+* **SC (Short Code)** – Frequent terms replaced with short codes. Moderate compression.
 
-   * Terms, structures, and entities are **mapped to tokens**.
-   * Achieves **maximum compression** while keeping all explicit data intact.
-   * Example: `AMD Ryzen 7 5800X3D → R7-5800X3D`
-   * **Compression:** Strongest currently.
+  * Example: `Intel Core i9-13900 → INT i9-13900`
+* **TM (Token Mapping)** – Terms and structures mapped to tokens for maximum compression.
 
-> **Note:** Versions without SC or TM are just base/reference versions.
+  * Example: `AMD Ryzen 7 5800X3D → R7-5800X3D`
+
+> Versions without SC or TM are base/reference only.
+
+---
+
+## Usage
+
+1. Place your model in `EasyAI/Models/...`.
+2. Run `EasyAI_Launcher.bat`.
+3. Select a model.
+4. Use **Training Extra SPs** if desired.
+5. Start Chatting.
